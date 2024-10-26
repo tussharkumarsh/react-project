@@ -1,9 +1,9 @@
 import React from 'react';
-
+import HeaderLogo from './HeaderLogo';
 function Header() {
   return (
     <>
-    <p>Header</p>
+    <HeaderLogo/>
     </>
   );
 }
