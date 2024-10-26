@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+.topHeader{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: orange;
+  align-items: center;
+  padding: 1rem;
+}
+
+.topHeader button{
+  padding: 10px 30px;
+  color: white;
+  background-color: blue;
+  font-weight: 700;
+  border: blue;
+  border-radius: 10px;
+}
+
+
+.link-items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-items div{
+  font-weight: 500;
+padding: 0 20px ;
+
+}
