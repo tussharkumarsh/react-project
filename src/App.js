@@ -1,9 +1,12 @@
 import './App.css';
-import Header from './components/Header';
+import HeaderComponent from './components/HeaderComponent';
+import HeroComponent from './components/HeroComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div>
-      <Header />
+      <HeaderComponent />
+      <HeroComponent/>
     </div>
   );
 }
