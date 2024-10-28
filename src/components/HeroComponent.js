@@ -9,19 +9,19 @@ function HeroComponent() {
         <div className="container my-5">
             <div className='row'>
                 <div className='col-md-3'>
-                    <HeroCardComponent productName="product name 1" productDescription="description text" productImage={logoImage} />
+                    <HeroCardComponent productName="Product Name 1" productDescription="description text" productImage={logoImage} />
                 </div>
 
                 <div className='col-md-3'>
-                    <HeroCardComponent productName="product name 2" productDescription="description text" productImage={logoImage} />
+                    <HeroCardComponent productName="Product Name 2" productDescription="description text" productImage={logoImage} />
                 </div>
 
                 <div className='col-md-3'>
-                    <HeroCardComponent productName="product name 3" productDescription="description text" productImage={logoImage} />
+                    <HeroCardComponent productName="Product Name 3" productDescription="description text" productImage={logoImage} />
                 </div>
 
                 <div className='col-md-3'>
-                    <HeroCardComponent productName="product name 4" productDescription="description text" productImage={logoImage} />
+                    <HeroCardComponent productName="Product Name 4" productDescription="description text" productImage={logoImage} />
                 </div>
             </div>
 
