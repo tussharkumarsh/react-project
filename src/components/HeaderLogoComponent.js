@@ -1,8 +1,9 @@
 import React from 'react'
+import logoImage from '../logo.svg';
 
 function HeaderLogoComponent() {
     return <>
-        <span>Logo</span>
+    <img src={logoImage} className='logo' />
     </>
 }
 
