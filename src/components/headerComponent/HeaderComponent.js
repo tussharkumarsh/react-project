@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderLogoComponent from './HeaderLogoComponent';
 import HeaderLinksComponent from './HeaderLinksComponent';
 import HeaderButtonComponent from './HeaderButtonComponent';
-import '../App.scss'
+import '../../App.scss'
 function HeaderComponent() {
   return (
     <>
