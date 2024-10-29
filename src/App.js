@@ -1,5 +1,5 @@
 import './App.scss';
-import HeaderComponent from './components/HeaderComponent';
+import HeaderComponent from './components/headerComponent/HeaderComponent';
 import HeroComponent from './components/HeroComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
