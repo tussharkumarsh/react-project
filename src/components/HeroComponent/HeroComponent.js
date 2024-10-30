@@ -11,7 +11,6 @@ function HeroComponent() {
     ];
 
     return <>
-
         <div className="container my-5">
             <div className='row'>
                 {
@@ -22,10 +21,8 @@ function HeroComponent() {
                     })
                 }
             </div>
-
         </div>
     </>
-
 }
 
 export default HeroComponent;
