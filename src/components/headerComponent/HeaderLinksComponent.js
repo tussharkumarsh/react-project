@@ -3,13 +3,24 @@ import './HeaderComponent.scss'
 import LinkComponent from './HeaderLinkComponent';
 
 function HeaderLinksComponent() {
+
+    const links = [
+        { id: 1, link: 'Home', linkText: 'Home' },
+        { id: 2, link: 'About', linkText: 'About' },
+        { id: 1, link: 'Services', linkText: 'Services' },
+        { id: 1, link: 'Contact', linkText: 'Contact' },
+    ];
+
     return (
         <nav>
             <ol class="nav-list">
-                <li class="nav-item"> <LinkComponent link="Home" linkText="Home" /></li>
-                <li class="nav-item"> <LinkComponent link="About" linkText="About" /></li>
-                <li class="nav-item"> <LinkComponent link="Services" linkText="Services" /></li>
-                <li class="nav-item"> <LinkComponent link="Contact" linkText="Contact" /></li>
+                {
+                    links.map(link => {
+                        return <li class="nav-item">
+                            <LinkComponent link={link.link} linkText={link.linkText} />
+                        </li>
+                    })
+                }
             </ol>
         </nav>
     )
