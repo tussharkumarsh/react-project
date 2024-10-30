@@ -1,0 +1,52 @@
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item a:hover {
+    color: #666;
+}
+
+
+
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: orange;
+    align-items: center;
+    padding: 2rem;
+}
+
+.topHeader button {
+    padding: 10px 30px;
+    color: white;
+    background-color: blue;
+    font-weight: 700;
+    border: blue;
+    border-radius: 10px;
+}
+
+
+.link-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-items div {
+    font-weight: 500;
+    padding: 0 20px;
+
+}

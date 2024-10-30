@@ -1,6 +1,6 @@
 import './App.scss';
 import HeaderComponent from './components/headerComponent/HeaderComponent';
-import HeroComponent from './components/HeroComponent';
+import HeroComponent from './components/HeroComponent/HeroComponent'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (

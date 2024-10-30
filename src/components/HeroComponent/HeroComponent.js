@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroCardComponent from './HeroCardComponent';
-import logoImage from '../logo.svg';
+import logoImage from '../../logo.svg';
 
 function HeroComponent() {
 

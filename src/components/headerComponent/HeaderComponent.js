@@ -1,4 +1,5 @@
 import React from 'react';
+import './HeaderComponent.scss'
 import HeaderLogoComponent from './HeaderLogoComponent';
 import HeaderLinksComponent from './HeaderLinksComponent';
 import HeaderButtonComponent from './HeaderButtonComponent';
