@@ -15,10 +15,11 @@ function HeroComponent() {
             <div className='row'>
                 {
                     products.map(product => {
-                        return <div className='col-md-3'>
+                        return <div className='col-md-3' key={product.id}>
                             <HeroCardComponent productName={product.productName} productDescription={product.productDescription} productImage={product.productImage} />
                         </div>
-                    })
+                    }
+                    )
                 }
             </div>
         </div>
