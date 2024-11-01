@@ -1,22 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HeaderComponent.scss'
 import LinkComponent from './HeaderLinkComponent';
 
 function HeaderLinksComponent() {
 
-    const links = [
+    const [links, setLinks] = useState([
         { id: 1, link: 'Home', linkText: 'Home' },
         { id: 2, link: 'About', linkText: 'About' },
-        { id: 1, link: 'Services', linkText: 'Services' },
-        { id: 1, link: 'Contact', linkText: 'Contact' },
-    ];
+        { id: 3, link: 'Services', linkText: 'Services' },
+        { id: 4, link: 'Contact', linkText: 'Contact' },
+    ]);
 
     return (
         <nav>
-            <ol class="nav-list">
+            <ol className="nav-list">
                 {
                     links.map(link => {
-                        return <li class="nav-item">
+                        return <li className="nav-item" key={link.id}>
                             <LinkComponent link={link.link} linkText={link.linkText} />
                         </li>
                     })
