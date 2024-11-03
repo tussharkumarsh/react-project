@@ -52,5 +52,4 @@ function HeroComponent() {
         </div>
     </>
 }
-
 export default HeroComponent;

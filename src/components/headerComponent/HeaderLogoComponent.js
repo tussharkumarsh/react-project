@@ -3,7 +3,7 @@ import logoImage from '../../logo.svg';
 
 function HeaderLogoComponent() {
     return <>
-    <img src={logoImage} className='logo' />
+        <img src={logoImage} className='logo' />
     </>
 }
 
