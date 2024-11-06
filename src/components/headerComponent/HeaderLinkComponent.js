@@ -6,4 +6,5 @@ function LinkComponent(props) {
     </>
 }
 
+
 export default LinkComponent;
