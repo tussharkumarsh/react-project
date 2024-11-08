@@ -5,6 +5,4 @@ function LinkComponent(props) {
         <a href={props.link}>{props.linkText}</a>
     </>
 }
-
-
 export default LinkComponent;

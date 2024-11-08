@@ -6,7 +6,4 @@ function HeaderLogoComponent() {
         <img src={logoImage} className='logo' />
     </>
 }
-
-
-
 export default HeaderLogoComponent;

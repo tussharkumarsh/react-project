@@ -12,5 +12,4 @@ function HeroCardComponent(props) {
         </div>
     )
 }
-
 export default HeroCardComponent;

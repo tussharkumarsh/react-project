@@ -35,7 +35,6 @@ function HeroComponent() {
                     placeholder="Enter an item"
                     className="flex-grow p-2 border rounded-l mb-5"
                 />
-
                 {
                     products.map(product => {
                         return <div className='col-md-3' key={product.id}>
