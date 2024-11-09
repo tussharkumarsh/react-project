@@ -32,7 +32,7 @@ function HeroComponent() {
                     type="text"
                     value={inputValue}
                     onChange={changeProductName}
-                    placeholder="Enter an item"
+                    placeholder="Enter product name"
                     className="flex-grow p-2 border rounded-l mb-5"
                 />
                 {
@@ -41,7 +41,7 @@ function HeroComponent() {
                             <HeroCardComponent productName={product.productName} productDescription={product.productDescription} productImage={product.productImage} />
 
                             <button className='btn btn-primary w-100' onClick={() => { updateProduct(product.id) }}>
-                                Add to cart
+                                Update Product Name
                             </button>
                         </div>
                     }
