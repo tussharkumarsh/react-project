@@ -17,12 +17,15 @@ function HeroComponent() {
     };
 
     function updateProduct(id) {
-        const productCopy = products
+        const productsCopy = structuredClone(products)
 
-        productCopy[id].productName = inputValue
+        productsCopy[id].productName = inputValue
 
-        setProducts(productCopy)
-        console.log(productCopy)
+        setProducts(productsCopy)
+        // console.log(productsCopy)
+        setTimeout(() => {
+            console.log(products)
+        }, 5000);
     }
 
     return <>
