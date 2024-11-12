@@ -42,3 +42,43 @@
   height: 75px;
   width: 75px;
 }
+
+
+.imageDiv{
+  height: 400px;
+  padding: 1rem;
+  align-content: center;
+}
+
+.card-img-top{
+  max-height: 300px;
+}
+
+// .product-description{
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 3; /* after 3 line show ... */
+//   -webkit-box-orient: vertical;
+//   transition-duration: 1s;
+// }
+
+// .product-description:hover{
+//   text-overflow: unset;
+//   overflow: unset;
+//   z-index: 99999;
+//   border: 1px solid red;
+//   height: 300px;
+//   transition-duration: 5s;
+// }
+
+
+.product-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.8s ease;
+  padding: 15px;
+  border-radius: 8px;
+}

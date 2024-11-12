@@ -1,13 +1,17 @@
 import React from 'react'
-import './HeroComponent'
+import ProductNameComponent from './ProductComponent/ProductNameComponent'
+import ProductDescriptionComponent from './ProductComponent/ProductDescriptionComponent'
+import ProductImageComponent from './ProductComponent/ProductImageComponent'
 
 function HeroCardComponent(props) {
     return (
         <div className="card">
-            <img src={props.productImage} className="card-img-top" alt="Card Thumbnail" />
+            <div className='imageDiv'>
+                <ProductImageComponent image={props.image}></ProductImageComponent>
+            </div>
             <div className="card-body text-center">
-                <h5 className="card-title">{props.productName}</h5>
-                <p className="card-text">{props.productDescription}</p>
+                <ProductNameComponent title={props.title}></ProductNameComponent>
+                <ProductDescriptionComponent description={props.description}></ProductDescriptionComponent>
             </div>
         </div>
     )
