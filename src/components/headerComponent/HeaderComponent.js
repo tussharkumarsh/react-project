@@ -6,13 +6,11 @@ import HeaderButtonComponent from './HeaderButtonComponent';
 import '../../App.scss'
 function HeaderComponent() {
   return (
-    <>
       <div className='topHeader'>
         <HeaderLogoComponent />
         <HeaderLinksComponent />
         <HeaderButtonComponent />
       </div>
-    </>
   );
 }
 export default HeaderComponent;
