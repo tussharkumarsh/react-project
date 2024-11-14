@@ -7,9 +7,9 @@ import '../../App.scss'
 function HeaderComponent() {
   return (
       <div className='topHeader'>
-        <HeaderLogoComponent />
-        <HeaderLinksComponent />
-        <HeaderButtonComponent />
+        <HeaderLogoComponent/>
+        <HeaderLinksComponent/>
+        <HeaderButtonComponent/>
       </div>
   );
 }
