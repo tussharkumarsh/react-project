@@ -10,14 +10,13 @@ function HeaderLinksComponent() {
         { id: 3, link: 'Services', linkText: 'Services' },
         { id: 4, link: 'Contact', linkText: 'Contact' },
     ]);
-
     return (
         <nav>
             <ol className="nav-list">
                 {
                     links.map(link => {
                         return <li className="nav-item" key={link.id}>
-                            <LinkComponent link={link.link} linkText={link.linkText} />
+                            <LinkComponent link={link.link} linkText={link.linkText}/>
                         </li>
                     })
                 }
