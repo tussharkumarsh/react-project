@@ -10,7 +10,7 @@ import './HeroComponet.scss';
 
 function HeroCardComponent(props) {
     return (
-        <div class="product-card">
+        <div className="product-card">
             <div className="product-image">
                 <ProductImageComponent image={props.image}></ProductImageComponent>
             </div>
