@@ -55,7 +55,7 @@ function HeroComponent() {
         },
         {
             id: 5,
-            title: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+            title: "John Hardy Women's Gold & Silver Station Chain Bracelet",
             price: 695,
             description: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
             category: "jewelery",
@@ -127,7 +127,7 @@ function HeroComponent() {
         },
         {
             id: 11,
-            title: "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+            title: "Silicon Power 256GB SSD Cache Performance Boost",
             price: 109,
             description: "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
             category: "electronics",
@@ -139,7 +139,7 @@ function HeroComponent() {
         },
         {
             id: 12,
-            title: "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+            title: "WD 4TB Gaming Drive Portable External Hard Drive",
             price: 114,
             description: "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
             category: "electronics",
@@ -151,7 +151,7 @@ function HeroComponent() {
         },
         {
             id: 13,
-            title: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+            title: "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
             price: 599,
             description: "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
             category: "electronics",
@@ -163,7 +163,7 @@ function HeroComponent() {
         },
         {
             id: 14,
-            title: "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+            title: "Samsung 49-Inch Curved Monitor- Ultrawide QLED ",
             price: 999.99,
             description: "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
             category: "electronics",
@@ -175,7 +175,7 @@ function HeroComponent() {
         },
         {
             id: 15,
-            title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+            title: "Women's 3-in-1 Snowboard Jacket Winter Coats",
             price: 56.99,
             description: "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
             category: "women's clothing",
@@ -187,7 +187,7 @@ function HeroComponent() {
         },
         {
             id: 16,
-            title: "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+            title: "Lock Women's Hooded Faux Leather Biker Jacket",
             price: 29.95,
             description: "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
             category: "women's clothing",
@@ -199,7 +199,7 @@ function HeroComponent() {
         },
         {
             id: 17,
-            title: "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+            title: "Rain Jacket Windbreaker Striped Climbing Raincoats",
             price: 39.99,
             description: "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
             category: "women's clothing",
@@ -253,7 +253,7 @@ function HeroComponent() {
                 {
                     products.map(product => {
                         return <div className='col-md-3' key={product.id}>
-                            <HeroCardComponent title={product.title} description={product.description} image={product.image} />
+                            <HeroCardComponent product title={product.title} description={product.description} image={product.image} price={product.price} rating={product.rating.rate} review={product.rating.count}  />
                         </div>
                     })
                 }

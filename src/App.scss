@@ -51,7 +51,8 @@
 }
 
 .card-img-top {
-  max-height: 300px;
+  height: 100%;
+  padding: 1rem;
 }
 
 .product-description {
@@ -60,6 +61,16 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: all 0.8s ease;
-  padding: 15px;
   border-radius: 8px;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+
+  margin-bottom: 2rem;
 }

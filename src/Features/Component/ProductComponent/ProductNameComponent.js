@@ -1,5 +1,5 @@
 import React from 'react'
 function ProductNameComponent(props) {
-    return <h5 className="card-title"> {props.title} </h5>
+    return <h3 className="product-title">{props.title}</h3>
 }
 export default ProductNameComponent;
