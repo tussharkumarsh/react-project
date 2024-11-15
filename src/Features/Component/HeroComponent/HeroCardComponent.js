@@ -1,7 +1,7 @@
 import React from 'react'
-import ProductNameComponent from './ProductComponent/ProductNameComponent'
-import ProductDescriptionComponent from './ProductComponent/ProductDescriptionComponent'
-import ProductImageComponent from './ProductComponent/ProductImageComponent'
+import ProductNameComponent from '../ProductComponent/ProductNameComponent'
+import ProductDescriptionComponent from '../ProductComponent/ProductDescriptionComponent'
+import ProductImageComponent from '../ProductComponent/ProductImageComponent'
 
 function HeroCardComponent(props) {
     return (
