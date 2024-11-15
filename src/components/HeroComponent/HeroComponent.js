@@ -247,45 +247,15 @@ function HeroComponent() {
         }
     ]);
 
-    const [inputValue, setInputValue] = useState('');
-
-    function changeProductName(e) {
-        setInputValue(e.target.value);
-    };
-
-    function updateProduct(id) {
-        const productsCopy = structuredClone(products)
-
-        productsCopy[id].productName = inputValue
-
-        setProducts(productsCopy)
-        // console.log(productsCopy)
-        setTimeout(() => {
-            console.log(products)
-        }, 5000);
-    }
-
     return <>
         <div className="container my-5">
             <div className='row'>
-                <input
-                    type="text"
-                    value={inputValue}
-                    onChange={changeProductName}
-                    placeholder="Enter product name"
-                    className="flex-grow p-2 border rounded-l mb-5"
-                />
                 {
                     products.map(product => {
                         return <div className='col-md-3' key={product.id}>
                             <HeroCardComponent title={product.title} description={product.description} image={product.image} />
-
-                            {/* <button className='btn btn-primary w-100' onClick={() => { updateProduct(product.id) }}>
-                                Update Product Name
-                            </button> */}
                         </div>
-                    }
-                    )
+                    })
                 }
             </div>
         </div>
