@@ -253,7 +253,7 @@ function HeroComponent() {
                 {
                     products.map(product => {
                         return <div className='col-md-3' key={product.id}>
-                            <HeroCardComponent product title={product.title} description={product.description} image={product.image} price={product.price} rating={product.rating.rate} review={product.rating.count}  />
+                            <HeroCardComponent product title={product.title} description={product.description} image={product.image} price={product.price} rating={product.rating.rate} review={product.rating.count} />
                         </div>
                     })
                 }
