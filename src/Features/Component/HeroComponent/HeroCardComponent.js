@@ -8,6 +8,7 @@ import ProductReviewComponent from '../ProductComponent/ProductReviewComponent'
 import ProductAddCartComponent from '../ProductComponent/ProductAddCartButtonComponent'
 import './HeroComponet.scss';
 
+
 function HeroCardComponent(props) {
     return (
         <div className="product-card">
