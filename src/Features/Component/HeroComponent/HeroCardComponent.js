@@ -13,8 +13,7 @@ function HeroCardComponent(props) {
         <div className="product-card">
             <div className="product-image">
                 <ProductImageComponent image={props.image}></ProductImageComponent>
-            </div>
-            
+            </div>    
             <div className="product-content">
                 <ProductNameComponent title={props.title}></ProductNameComponent>
                 <ProductDescriptionComponent description={props.description}></ProductDescriptionComponent>
