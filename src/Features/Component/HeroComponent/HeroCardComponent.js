@@ -15,8 +15,7 @@ function HeroCardComponent(props) {
                 <ProductImageComponent image={props.image}></ProductImageComponent>
             </div>    
             <div className="product-content">
-                <ProductNameComponent title={props.title}></ProductNameComponent>
-        
+                <ProductNameComponent title={props.title}></ProductNameComponent>      
                 <ProductDescriptionComponent description={props.description}></ProductDescriptionComponent>
                 <ProductPriceComponent price={props.price}></ProductPriceComponent>
                 <div className="product-rating">
