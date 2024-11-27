@@ -19,10 +19,14 @@ function HomePage() {
   return (
     <div>
       <div className='herocomponent'>Hero Component</div>
-      <div className='product-list'>
-        {products.map((product) => {
-          return <Product key={product.id} product={product} addProductToCart={addProductToCart} />;
-        })}
+      <div className='container my-5 product-list'>
+        <div className='row'>
+          {products.map((product) => {
+            return <div className='col-md-3'>
+              <Product key={product.id} product={product} addProductToCart={addProductToCart} />
+            </div>
+          })}
+        </div>
       </div>
     </div>
   );

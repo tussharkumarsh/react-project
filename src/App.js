@@ -1,5 +1,5 @@
 import './App.scss';
-import HeaderComponent from './components/headerComponent/HeaderComponent';
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent"
 import HomePage from "./Features/home-page/HomePage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
