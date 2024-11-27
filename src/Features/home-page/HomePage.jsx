@@ -22,8 +22,8 @@ function HomePage() {
       <div className='container my-5 product-list'>
         <div className='row'>
           {products.map((product) => {
-            return <div className='col-md-3'>
-              <Product key={product.id} product={product} addProductToCart={addProductToCart} />
+            return <div className='col-md-3' key={product.id}>
+              <Product  product={product} addProductToCart={addProductToCart} />
             </div>
           })}
         </div>
