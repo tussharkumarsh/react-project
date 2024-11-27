@@ -12,8 +12,8 @@ function HomePage() {
     }, 5000);
   });
 
-  function addProductToCart(id) {
-    console.log(id);
+  function addProductToCart(product) {
+    console.log(product.title);
   }
 
   return (

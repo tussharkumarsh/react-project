@@ -28,9 +28,10 @@ function Product({ product, addProductToCart }) {
         </div>
         <div className='mt-3'>
           <Button onBtnClick={() => {
-            addProductToCart(product.id);
+            addProductToCart(product);
           }}
-            text={`Test product ${product.id}`}
+            // text={`Test product ${product.id}`}
+            text={`Add to Cart`}
           />
         </div>
       </div>
