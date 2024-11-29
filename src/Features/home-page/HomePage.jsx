@@ -1,16 +1,25 @@
 import { useEffect, useState } from 'react';
-import ProductsData from '../../mock-data/products.json';
+// import ProductsData from '../../mock-data/products.json';
 import Product from './container/Product';
 
 function HomePage() {
   const [products, setProducts] = useState([]);
 
+  async function testFunction() {
+    const response = await fetch("https://fakestoreapi.com/products");
+    const ProductsData = await response.json();
+    console.log("data", ProductsData);
+    setProducts(ProductsData);
+  }
+
   useEffect(() => {
-    // API call code
-    setTimeout(() => {
-      setProducts(ProductsData);
-    }, 5000);
-  });
+    testFunction() // API call code
+
+    // setTimeout(() => {
+    //   setProducts(ProductsData);
+    // }, 5000);
+
+  }, []);
 
   function addProductToCart(product) {
     console.log(product.title);
@@ -23,7 +32,7 @@ function HomePage() {
         <div className='row'>
           {products.map((product) => {
             return <div className='col-md-3' key={product.id}>
-              <Product  product={product} addProductToCart={addProductToCart} />
+              <Product product={product} addProductToCart={addProductToCart} />
             </div>
           })}
         </div>
