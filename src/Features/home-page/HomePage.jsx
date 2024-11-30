@@ -5,7 +5,7 @@ import Product from './container/Product';
 function HomePage() {
   const [products, setProducts] = useState([]);
 
-  async function testFunction() {
+  async function getProductData() {
     const response = await fetch("https://fakestoreapi.com/products");
     const ProductsData = await response.json();
     console.log("data", ProductsData);
@@ -13,7 +13,7 @@ function HomePage() {
   }
 
   useEffect(() => {
-    testFunction() // API call code
+    getProductData() // API call code
 
     // setTimeout(() => {
     //   setProducts(ProductsData);
