@@ -7,11 +7,6 @@ import ProductPrice from '../components/ProductPrice';
 import ProductRating from '../components/ProductRating';
 import ProductRatingCount from '../components/ProductRatingCount';
 
-// import './HeroComponet.scss';
-
-// props = {key: , product, addProductToCart};
-
-// function Product(props) {
 function Product({ product, addProductToCart }) {
   return (
     <div className='product-card'>
@@ -30,12 +25,11 @@ function Product({ product, addProductToCart }) {
           <Button onBtnClick={() => {
             addProductToCart(product);
           }}
-            // text={`Test product ${product.id}`}
             text={`Add to Cart`}
           />
         </div>
       </div>
     </div>
-  )
+  );
 }
 export default Product;

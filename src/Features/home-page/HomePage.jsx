@@ -1,25 +1,36 @@
 import { useEffect, useState } from 'react';
-// import ProductsData from '../../mock-data/products.json';
 import Product from './container/Product';
 
 function HomePage() {
   const [products, setProducts] = useState([]);
 
   async function getProductData() {
-    const response = await fetch("https://fakestoreapi.com/products");
-    const ProductsData = await response.json();
-    console.log("data", ProductsData);
-    setProducts(ProductsData);
+    try {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const ProductsData = await response.json();
+      console.log("data", ProductsData);
+      setProducts(ProductsData);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   useEffect(() => {
-    getProductData() // API call code
-
-    // setTimeout(() => {
-    //   setProducts(ProductsData);
-    // }, 5000);
-
+    getProductData();
   }, []);
+
+  useEffect(() => {
+    testApiError();
+  }, []);
+
+  async function testApiError() {
+    // asdfsd.ahdidh = 123;
+    try {
+      asdfsd.ahdidh = 123;
+    } catch (e) {
+      console.log('errrrrrr', e);
+    }
+  }
 
   function addProductToCart(product) {
     console.log(product.title);
@@ -33,7 +44,7 @@ function HomePage() {
           {products.map((product) => {
             return <div className='col-md-3' key={product.id}>
               <Product product={product} addProductToCart={addProductToCart} />
-            </div>
+            </div>;
           })}
         </div>
       </div>
