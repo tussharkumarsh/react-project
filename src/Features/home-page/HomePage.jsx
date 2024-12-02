@@ -19,18 +19,18 @@ function HomePage() {
     getProductData();
   }, []);
 
-  useEffect(() => {
-    testApiError();
-  }, []);
+  // useEffect(() => {
+  //   testApiError();
+  // }, []);
 
-  async function testApiError() {
-    // asdfsd.ahdidh = 123;
-    try {
-      asdfsd.ahdidh = 123;
-    } catch (e) {
-      console.log('errrrrrr', e);
-    }
-  }
+  // async function testApiError() {
+  //   // asdfsd.ahdidh = 123;
+  //   try {
+  //     asdfsd.ahdidh = 123;
+  //   } catch (e) {
+  //     console.log('errrrrrr', e);
+  //   }
+  // }
 
   function addProductToCart(product) {
     console.log(product.title);
