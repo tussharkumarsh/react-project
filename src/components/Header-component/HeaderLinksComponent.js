@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './HeaderComponent.scss'
+import React, { useState } from 'react';
+import './HeaderComponent.scss';
 import LinkComponent from './HeaderLinkComponent';
 
 function HeaderLinksComponent() {
@@ -16,12 +16,12 @@ function HeaderLinksComponent() {
                 {
                     links.map(link => {
                         return <li className="nav-item" key={link.id}>
-                            <LinkComponent link={link.link} linkText={link.linkText}/>
-                        </li>
+                            <LinkComponent link={link.link} linkText={link.linkText} />
+                        </li>;
                     })
                 }
             </ol>
         </nav>
-    )
+    );
 }
 export default HeaderLinksComponent;
