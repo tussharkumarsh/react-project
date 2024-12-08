@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import Product from './container/Product';
+import { IProduct } from 'interfaces/product';
 
 function HomePage() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<IProduct[]>([]);
 
   async function getProductData() {
     try {
@@ -19,7 +20,7 @@ function HomePage() {
     getProductData();
   }, []);
 
-  function addProductToCart(product) {
+  function addProductToCart(product: IProduct) {
     console.log(product.title);
   }
 
