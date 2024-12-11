@@ -1,5 +1,4 @@
-import React from 'react';
-import logoImage from '../../logo.svg';
+import logoImage from '../../assets/logo.svg';
 function HeaderLogoComponent() {
     return <img src={logoImage} className='logo' alt='Product img' />;
 }
