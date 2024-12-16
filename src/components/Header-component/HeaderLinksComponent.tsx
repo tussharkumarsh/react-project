@@ -24,4 +24,5 @@ function HeaderLinksComponent() {
         </nav>
     );
 }
+
 export default HeaderLinksComponent;
