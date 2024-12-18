@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './HeaderComponent.scss';
 import LinkComponent from './HeaderLinkComponent';
 
 function HeaderLinksComponent() {
 
-    const [links, setLinks] = useState([
+    const [links] = useState([
         { id: 1, link: 'Home', linkText: 'Home' },
         { id: 2, link: 'About', linkText: 'About' },
         { id: 3, link: 'Services', linkText: 'Services' },
