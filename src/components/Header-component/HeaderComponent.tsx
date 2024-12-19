@@ -12,5 +12,4 @@ function HeaderComponent() {
     </div>
   );
 }
-
 export default HeaderComponent;

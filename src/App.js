@@ -8,7 +8,7 @@ import './App.scss';
 function App() {
   return (
     <div>
-      <HeaderComponent />
+      <HeaderComponent></HeaderComponent>
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={HomePage} />
