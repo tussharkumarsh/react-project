@@ -1,4 +1,4 @@
-import HeaderComponent from './components/ssheader-component/HeaderComponent';
+import HeaderComponent from './components/header-component/HeaderComponent';
 import HomePage from "./features/home-page/HomePage";
 import CartPage from "./features/cart-page/CartPage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
