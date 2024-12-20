@@ -30,7 +30,7 @@ function HomePage() {
       <div className='container my-5 product-list'>
         <div className='row'>
           {products.map((product) => {
-            return <div className='col-md-3' key={product.id}>
+            return <div className='col-12 col-md-3' key={product.id}>
               <Product product={product} addProductToCart={addProductToCart} />
             </div>;
           })}
