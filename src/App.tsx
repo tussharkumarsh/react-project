@@ -1,6 +1,6 @@
 import HeaderComponent from './components/header-component/HeaderComponent';
-import HomePage from "./features/home-page/HomePage";
-import CartPage from "./features/cart-page/CartPage";
+import HomePage from "./aafeatures/home-page/HomePage";
+import CartPage from "./aafeatures/cart-page/CartPage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
