@@ -16,7 +16,6 @@ function HomePage() {
     }
   }
 
-
   useEffect(() => {
     getProductData();
   }, []);
