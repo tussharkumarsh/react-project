@@ -13,7 +13,7 @@ function Product({ product, addProductToCart }) {
         <ProductImage image={product.image} />
       </div>
       <div className="product-content">
-        <ProductTitle title={product.title} />
+        <ProductTitle title={product.title} id={product.id} />
         <ProductDescription description={product.description} />
         <ProductPrice price={product.price} />
         <div className="product-rating">

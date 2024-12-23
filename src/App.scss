@@ -137,3 +137,83 @@
   width: auto;
   margin: 1rem;
 }
+
+
+.product-img {
+  height: 200px;
+  width: 200px;
+  margin: 1rem;
+}
+
+.center-img {
+  text-align-last: center;
+  align-content: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.font-lekton {
+  font-family: 'Lekton', monospace;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.product-detail-title {
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.product-detail-price {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.product-detail-category {
+  text-transform: capitalize;
+  background-color: rgb(255, 251, 235);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.product-img-container {
+  border: 1px solid #ddd;
+}
+
+.product-detail-rating {
+  font-size: 30px;
+  display: flex;
+  color: #ffa700;
+  border-top: 1px solid red;
+  padding-top: 0.5rem;
+
+  .rate {
+    font-size: 70px;
+    color: #ffa700;
+    font-weight: 700;
+  }
+}
