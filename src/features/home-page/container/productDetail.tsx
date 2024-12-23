@@ -22,9 +22,6 @@ const ProductDetail = () => {
         getProductDetail();
     }, []);
 
-    console.log("product ", product);
-
-
     if (!product) {
         return (
             <div>
@@ -37,7 +34,7 @@ const ProductDetail = () => {
     return (
         <div className='container my-5 product-detail'>
             <h1>
-                Product Detail Page
+                Product Detail
             </h1>
             <div className='row'>
                 <div className='col-12 col-md-6 center-img product-img-container'>
@@ -53,9 +50,9 @@ const ProductDetail = () => {
                         <div>
                             <span className='rate'>{product.rating.rate}</span>
                         </div>
-                        <div>
-                            <div>*****</div>
-                            <div >based on {product.rating.count} ratings</div>
+                        <div className='based-on'>
+                            <div>★★★★★</div>
+                            <div className='based-on-text' >based on {product.rating.count} ratings</div>
                         </div>
                     </div>
 
