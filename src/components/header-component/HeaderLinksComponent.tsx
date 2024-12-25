@@ -15,6 +15,7 @@ function HeaderLinksComponent() {
         <nav>
             <ol className="nav-list">
                 {
+
                     links.map(link => {
                         return <li className="nav-item" key={link.id}>
                             <LinkComponent link={link.link} linkText={link.linkText} />
