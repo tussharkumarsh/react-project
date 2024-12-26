@@ -2,6 +2,7 @@ import { IProduct } from 'interfaces/product';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ProductImage from './components/ProductImage';
+import ProductCategory from './components/ProductCategory';
 
 const ProductDetail = () => {
     const { id } = useParams<{ id: string; }>();
@@ -42,7 +43,7 @@ const ProductDetail = () => {
                     <ProductImage image={product.image} title={product.title} />
                 </div>
                 <div className='col-12 col-md-6'>
-                    <p className='product-detail-category'>Product Category: <b> {product.category}</b></p>
+                    <ProductCategory category={product.category} />
                     <h2 className='product-detail-title'>{product.title}</h2>
                     <p><span className='product-detail-price'> ${product.price}</span> (Inclusive of GST)</p>
                     <p>{product.description}</p>
