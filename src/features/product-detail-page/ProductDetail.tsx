@@ -5,6 +5,7 @@ import ProductImage from './components/ProductImage';
 import ProductCategory from './components/ProductCategory';
 import ProductTitle from './components/ProductTitle';
 import ProductPrice from './components/ProductPrice';
+import ProductDescription from './components/ProductDescripion';
 
 const ProductDetail = () => {
     const { id } = useParams<{ id: string; }>();
@@ -48,8 +49,7 @@ const ProductDetail = () => {
                     <ProductCategory category={product.category} />
                     <ProductTitle title={product.title} />
                     <ProductPrice price={product.price} />
-                    <p>{product.description}</p>
-
+                    <ProductDescription description={product.description} />
                     <div className='product-detail-rating'>
                         <div>
                             <span className='rate'>{product.rating.rate}</span>
