@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ProductImage from './components/ProductImage';
 import ProductCategory from './components/ProductCategory';
 import ProductTitle from './components/ProductTitle';
+import ProductPrice from './components/ProductPrice';
 
 const ProductDetail = () => {
     const { id } = useParams<{ id: string; }>();
@@ -46,7 +47,7 @@ const ProductDetail = () => {
                 <div className='col-12 col-md-6'>
                     <ProductCategory category={product.category} />
                     <ProductTitle title={product.title} />
-                    <p><span className='product-detail-price'> ${product.price}</span> (Inclusive of GST)</p>
+                    <ProductPrice price={product.price} />
                     <p>{product.description}</p>
 
                     <div className='product-detail-rating'>
