@@ -4,7 +4,7 @@ import CartPage from "./features/cart-page/CartPage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import ProductDetail from 'features/home-page/container/ProductDetail';
+import ProductDetail from 'features/product-detail-page/ProductDetail';
 
 function App() {
   return (
