@@ -1,6 +1,7 @@
 import { IProduct } from 'interfaces/product';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import ProductImage from './components/ProductImage';
 
 const ProductDetail = () => {
     const { id } = useParams<{ id: string; }>();
@@ -38,7 +39,7 @@ const ProductDetail = () => {
             </h1>
             <div className='row'>
                 <div className='col-12 col-md-6 center-img product-img-container'>
-                    <img className='product-img' src={product.image} alt={product.title} />
+                    <ProductImage image={product.image} title={product.title} />
                 </div>
                 <div className='col-12 col-md-6'>
                     <p className='product-detail-category'>Product Category: <b> {product.category}</b></p>
