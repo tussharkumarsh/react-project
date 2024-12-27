@@ -42,6 +42,10 @@ const ProductDetail = () => {
         navigate('/');
     }
 
+    function addProductToCart(product: IProduct) {
+        console.log(product.title);
+    }
+
     return (
         <div className='container my-5 product-detail'>
             <h1>
@@ -59,7 +63,10 @@ const ProductDetail = () => {
                     <div className='product-detail-rating'>
                         <ProductRating rating={product.rating} />
                     </div>
-                    <Button onBtnClick={() => { backtoHome(); }} text={`Back to Product List`} />
+                    <div className='d-flex justify-content-between mt-3'>
+                        <Button onBtnClick={() => { backtoHome(); }} text={`Back to Product List`} />
+                        <Button onBtnClick={() => { addProductToCart(product); }} text={`Add to Cart`} />
+                    </div>
                 </div>
             </div>
         </div>
