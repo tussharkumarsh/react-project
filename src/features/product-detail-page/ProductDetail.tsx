@@ -7,13 +7,12 @@ import ProductTitle from './components/ProductTitle';
 import ProductPrice from './components/ProductPrice';
 import ProductDescription from './components/ProductDescripion';
 import ProductRating from './components/ProductRating';
+import Button from 'components/button/Button';
 
 const ProductDetail = () => {
     const { id } = useParams<{ id: string; }>();
     const navigate = useNavigate();
-
     const [product, setProduct] = useState<IProduct | null>(null);
-
     async function getProductDetail() {
         try {
             const response = await fetch("https://fakestoreapi.com/products/" + id);
@@ -30,11 +29,17 @@ const ProductDetail = () => {
 
     if (!product) {
         return (
-            <div>
-                <h1>Product not found</h1>
-                <button onClick={() => navigate('/')}>Back to Products</button>
+            <div className='justify-center my-5'>
+
+                <img src="https://cdn.dribbble.com/users/3512533/screenshots/14168376/media/1357b33cb4057ecb3c6f869fc977561d.jpg?resize=300x275&vertical=center" alt="no product found" />
+                <br /> <br />
+                <Button onBtnClick={() => { backtoHome(); }} text={`Back to Product List`} />
             </div>
         );
+    }
+
+    function backtoHome() {
+        navigate('/');
     }
 
     return (
@@ -53,12 +58,10 @@ const ProductDetail = () => {
                     <ProductDescription description={product.description} />
                     <div className='product-detail-rating'>
                         <ProductRating rating={product.rating} />
-                        {/* <ProductRating rating={{ rate: 4.5, count: 123 }} /> */}
                     </div>
-                    <button className='btn btn-primary' onClick={() => navigate('/')}>Back to Products</button>
+                    <Button onBtnClick={() => { backtoHome(); }} text={`Back to Product List`} />
                 </div>
             </div>
-
         </div>
     );
 };
