@@ -26,7 +26,6 @@ function HomePage() {
 
   return (
     <div>
-      <div className='herocomponent'>Hero Component</div>
       <div className='container my-5 product-list'>
         <div className='row'>
           {products.map((product) => {

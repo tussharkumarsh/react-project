@@ -53,6 +53,7 @@ const ProductDetail = () => {
                     <ProductDescription description={product.description} />
                     <div className='product-detail-rating'>
                         <ProductRating rating={product.rating} />
+                        {/* <ProductRating rating={{ rate: 4.5, count: 123 }} /> */}
                     </div>
                     <button className='btn btn-primary' onClick={() => navigate('/')}>Back to Products</button>
                 </div>
