@@ -1,9 +1,5 @@
-
-
-
-
-async function testFunction () {
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-    console.log(response);
-}
+# 28.12.2024
+## Tasks
+- Make the pages responsive
+- Improve designing
 
