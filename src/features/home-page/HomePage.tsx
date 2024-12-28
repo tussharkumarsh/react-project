@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import Product from './container/Product';
 import { IProduct } from 'interfaces/product';
+import httpClient from '../../core/http-client';
+import { AxiosResponse } from 'axios';
 
 function HomePage() {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -9,9 +11,9 @@ function HomePage() {
   async function getProductData() {
     try {
       setIsLoading(true);
-      const response = await fetch('https://fakestoreapi.com/products');
-      const ProductsData = await response.json();
-      setProducts(ProductsData);
+      const response: AxiosResponse = await httpClient.get('products');
+      const data = await response.data;
+      setProducts(data);
       setIsLoading(false);
     } catch (e) {
       console.log(e);
@@ -23,8 +25,14 @@ function HomePage() {
     getProductData();
   }, []);
 
-  function addProductToCart(product: IProduct) {
-    console.log(product.title);
+  async function addProductToCart(product: IProduct) {
+    const response: AxiosResponse = await httpClient.post('products',   {
+      userId: 5,
+      date:'2020-02-03',
+      products:[{productId:5,quantity:1},{productId:1,quantity:5}]
+  });
+    const data = await response.data;
+    console.log(data)
   }
 
   if (isLoading) {
