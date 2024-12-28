@@ -3,7 +3,6 @@ function ProductRating(props) {
     const fullStars = Math.floor(rate); // Number of full stars
     const halfStar = rate % 1 >= 0.5 ? 1 : 0; // Check if a half star is needed
     const emptyStars = 5 - fullStars - halfStar; // Remaining stars are empty
-
     const stars = (
         <>
             {'★'.repeat(fullStars)}
@@ -13,7 +12,6 @@ function ProductRating(props) {
             </span>
         </>
     );
-
     return (
         <div>
             <div className="rating">
