@@ -15,7 +15,7 @@ function ProductRating(props) {
     );
 
     return (
-        <>
+        <div>
             <div className="rating">
                 <span className="rate">{rate.toFixed(1)}</span>
             </div>
@@ -25,7 +25,7 @@ function ProductRating(props) {
                 </div>
                 <div className="based-on-text">based on {count} ratings</div>
             </div>
-        </>
+        </div>
     );
 }
 
