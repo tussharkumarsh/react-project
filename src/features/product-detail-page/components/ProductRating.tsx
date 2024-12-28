@@ -28,5 +28,4 @@ function ProductRating(props) {
         </div>
     );
 }
-
 export default ProductRating;
