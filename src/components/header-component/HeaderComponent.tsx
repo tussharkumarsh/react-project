@@ -11,7 +11,7 @@ function HeaderComponent() {
     //   <HeaderButtonComponent />
     // </div>
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-yellow">
       <div className="container-fluid">
         <HeaderLogoComponent />
         <div className="collapse navbar-collapse" id="navbarNav">
