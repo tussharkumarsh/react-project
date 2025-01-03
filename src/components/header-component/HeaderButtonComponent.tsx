@@ -1,4 +1,4 @@
 function HeaderButtonComponent() {
-    return <button> Login </button>;
+    return <button className="btn btn-primary"> Login </button>;
 }
 export default HeaderButtonComponent;

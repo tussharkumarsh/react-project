@@ -12,17 +12,15 @@ function HeaderLinksComponent() {
         { id: 5, link: 'cart', linkText: 'Cart' },
     ]);
     return (
-        <nav>
-            <ol className="nav-list">
-                {
-                    links.map(link => {
-                        return <li className="nav-item" key={link.id}>
-                            <LinkComponent link={link.link} linkText={link.linkText} />
-                        </li>;
-                    })
-                }
-            </ol>
-        </nav>
+        <ul className="navbar-nav mx-auto">
+            {
+                links.map(link => {
+                    return <li className="nav-item" key={link.id}>
+                        <LinkComponent link={link.link} linkText={link.linkText} />
+                    </li>;
+                })
+            }
+        </ul>
     );
 }
 export default HeaderLinksComponent;
