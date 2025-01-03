@@ -9,7 +9,7 @@ import ProductRatingCount from '../components/ProductRatingCount';
 function Product({ product, addProductToCart }) {
   return (
     <div className='product-card'>
-      <div className="product-image">
+      <div className="">
         <ProductImage image={product.image} />
       </div>
       <div className="product-content">

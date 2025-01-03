@@ -26,13 +26,13 @@ function HomePage() {
   }, []);
 
   async function addProductToCart(product: IProduct) {
-    const response: AxiosResponse = await httpClient.post('products',   {
+    const response: AxiosResponse = await httpClient.post('products', {
       userId: 5,
-      date:'2020-02-03',
-      products:[{productId:5,quantity:1},{productId:1,quantity:5}]
-  });
+      date: '2020-02-03',
+      products: [{ productId: 5, quantity: 1 }, { productId: 1, quantity: 5 }]
+    });
     const data = await response.data;
-    console.log(data)
+    console.log(data);
   }
 
   if (isLoading) {
@@ -52,7 +52,7 @@ function HomePage() {
       <div className='row'>
         {products.map((product) => {
           return (
-            <div className='col-12 col-md-3' key={product.id}>
+            <div className='col-12 col-sm-6 col-md-4' key={product.id}>
               <Product product={product} addProductToCart={addProductToCart} />
             </div>
           );
