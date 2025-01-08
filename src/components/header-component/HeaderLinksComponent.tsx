@@ -3,7 +3,6 @@ import './HeaderComponent.scss';
 import LinkComponent from './HeaderLinkComponent';
 
 function HeaderLinksComponent() {
-
     const [links] = useState([
         { id: 1, link: '/', linkText: 'Home' },
         { id: 2, link: 'about', linkText: 'About' },
