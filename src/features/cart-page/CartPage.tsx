@@ -1,9 +1,6 @@
 import { useState } from "react";
-
 function CartPage() {
-
     const [quantity, setQuantity] = useState(1);
-
     const increaseQuantity = () => {
         setQuantity(prev => prev + 1);
     };
