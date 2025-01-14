@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 function CartPage() {
 
     const [quantity, setQuantity] = useState(1);
