@@ -7,7 +7,6 @@ function CartPage() {
     const decreaseQuantity = () => {
         setQuantity(prev => (prev > 1 ? prev - 1 : 1));
     };
-
     return <div className="container my-5">
         <h1>Cart Page</h1>
         <div className="row">
