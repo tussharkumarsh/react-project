@@ -5,4 +5,3 @@ function ProductTitle(props) {
 export default ProductTitle;
 
 
-
