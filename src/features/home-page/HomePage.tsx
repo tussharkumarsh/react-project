@@ -125,8 +125,6 @@ const useProductManager = () => {
 
 
 
-
-
 function HomePage() {
   const { products, loading, error } = useProductManager();
 
