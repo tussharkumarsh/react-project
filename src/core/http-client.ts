@@ -9,5 +9,3 @@ const httpClient = axios.create({
 
 export default httpClient;
 
-
-
